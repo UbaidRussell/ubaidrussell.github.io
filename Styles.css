@@ -1,16 +1,24 @@
 body{
-  background-color: #EAF6F6;
+  font-family: 'Noto Sans KR', sans-serif;
 }
-
-hr{
-  border-style: dotted none none;
-  border-color: grey;
-  border-width: 5px;
-  width: 30%;
+section{
+  position: relative;
+  margin-left: 250px;
+  margin-bottom: 50px;
+  margin-right: 250px;
+  margin-top: 250px;
+  font-size: 100px;
+  font-weight: 100px;
 }
-h1{
-  color: #66BFBF;
+footer{
+  position: relative;
+  padding-left: 250px;
 }
-h3{
-  color: #66BFBF;
+p{
+  position: relative;
+  font-size: 25px;
+}
+a{
+  color: black;
+  
 }
