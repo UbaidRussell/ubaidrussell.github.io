@@ -372,11 +372,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .carousel-caption p{
     font-style: italic;
-    font-size: font-size: 14px;
+    font-size: 14px;
 }
 
 .carousel-align {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
 }
