@@ -1,267 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-
-    <title>UbaidRussell</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<!--
-	<script>
-		window.confirm('This site is still under construction.')
-		window.prompt('This site is still under construction.However I will be taking your name and email address to notify you when the site is ready.')
-		window.alert('Thank you for your patience.')
-	</script>
-	-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubaid Russell | Tech Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="your-logo-url-here" alt="Ubaid Russell Logo">
+        </div>
+        <nav id="nav-menu">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
 
-  <body>
-  	<div class="loader"></div>
-  	<div data-pop="slide-down" id="popup">
-	    <!--<div class="popupcontent"></div>
-	        <img src='img/beerus sitting.png'></img>
-	    </div>-->
-	</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Ubaid Russell</h1>
+        <p>DESIGNER | DEVELOPER | ELECTRICIAN </p>
+        <button onclick="window.location.href='#projects'">View Projects</button>
+    </section>
 
-	<!--<audio autoplay>
-        <source src="assets/Going Down.mp3" type="audio/mpeg">
-	</audio>
-	-->
-  <div id="particles-js"></div>
-	<div id="headerwrap">
-	    <div class="container">
-			<div class="row">
-				<div id="typed-strings">
-					<p>Hey! Welcome to the site, my name is Russ 🖤</p>
-					<p>I'm a Full Stack Web Engineer</p>
-					<p>This means I Designing and Developing Beautiful Websites</p>
-					<p>Check out the catalog for Builders!</p>
-					<!--This code has nothing to do with our typed string it allows us to use the X icon on the bottom of our screen given to us by Icons8 (https://icons8.com/icons/set/twitter-x)--><div style="visibility: hidden;"><a  href="https://icons8.com/icon/fJp7hepMryiw/twitterx">TwitterX</a> icon by <a href="https://icons8.com">Icons8</a></div>
-				</div>
-				<h4><span id="typed"></span></h4>
-			</div>
-	    </div>
-	</div>
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Electrical Installation</li>
+            <li>Fire Alarm Systems</li>
+            <li>Telecom & Fiber Optics</li>
+            <li>Customer Service</li>
+            <li>Web Development</li>
+            <li>React.js & Node.js</li>
+            <li>Microsoft Office</li>
+            <li>Team Collaboration</li>
+            <li>OSHA Compliance</li>
+        </ul>
+    </section>
 
-	<div data-pop="slide-up" id='news-popup'>
-		<div class="news-popupcontrols">
-			<span id="news-popupclose">&times;</span>
-		</div>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Web Development</h3>
+                <p>Built a responsive site using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>Electrical Work</h3>
+                <p>Completed a residential wiring project at Apex Technical School.</p>
+            </div>
+            <div class="project-card">
+                <h3>Training Program</h3>
+                <p>Developed a training module for Starbucks baristas.</p>
+            </div>
+        </div>
+    </section>
 
-		<div class="carousel-align">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#myCarousel" data-slide-to="1"></li>
-					<!--
-				  	<li data-target="#myCarousel" data-slide-to="2"></li>
-				    <li data-target="#myCarousel" data-slide-to="3"></li>
-				    <li data-target="#myCarousel" data-slide-to="4"></li>
-				    <li data-target="#myCarousel" data-slide-to="5"></li>
-				    <li data-target="#myCarousel" data-slide-to="6"></li>
-				    <li data-target="#myCarousel" data-slide-to="7"></li>-->
-				</ol>
-				<div class="carousel-inner" role="listbox">
-				    <div class="item active">
-				        <a target="_blank" href="https://buildersonly.shop/"><img src="img/inverted heart.png"></a>
-				        <a target="_blank" href="">
-					        <div class="carousel-caption">
-					        	<h3>Builder's Only</h3>
-					        	<p>More Builders Only gear coming soon 🖤 -Ubaid</p>
-					        </div>
-					    </a>
-				    </div>
-					
-				      <div class="item">
-				        <a target="_blank" href="https://foundation.app/@UbaidRussell"><img src="img/Foundation-Logo.png"></a>
-				        <a target="_blank" href="">
-					        <div class="carousel-caption">
-								<br>
-					        	<h3>I'm on Foundation!</h3>
-					        	<p>Foundation is an Ethereum-based NFT marketplace. Check me out!</p>
-					        </div>
-					    </a>
-				    </div>
-					<!--
-				    <div class="item">
-				    	<a target="_blank" href="http://ubaidrussell.com/Design1/"><img src="img/clickable-loader-page.png"></a>
-				    	<a target="_blank" href="">
-					        <div class="carousel-caption">
-					        	<h3>Clickable loader</h3>
-					        	<p>Cool design we worked on</p>
-					        </div>
-					    </a>
-				    </div>
-				    <div class="item">
-				        <a target="_blank" href="https://ubaidrussell.com/flexbox-todo-app/"><img src="img/to-do site.png"></a>
-				        <a target="_blank" href="">
-					        <div class="carousel-caption">
-					        	<h3>Static To Do</h3>
-					        	<p>Static To Do Website</p>
-					        </div>
-					    </a>
-				    </div>
-					<!--
-				    <div class="item">
-				        <a target="_blank" href=""><img src=""></a>
-				        <a target="_blank" href="">
-					        <div class="carousel-caption">
-					        	<h3></h3>
-					        	<p></p>
-					        </div>
-					    </a>
-				    </div>
-				    <div class="item">
-				        <a target="_blank" href=""><img src=""></a>
-				        <a target="_blank" href="">
-					        <div class="carousel-caption">
-					        	<h3></h3>
-					        	<p></p>
-					        </div>
-					    </a>
-				    </div>
-				    <div class="item">
-				        <a target="_blank" href=""><img src=""></a>
-				        <a target="_blank" href="">
-					        <div class="carousel-caption">
-					        	<h3></h3>
-					        	<p></p>
-					        </div>
-					    </a>
-				    </div>
-				    <div class="item">
-				        <a target="_blank" href=""><img src=""></a>
-				        <a target="_blank" href="">
-					        <div class="carousel-caption">
-					        	<h3></h3>
-					        	<p></p>
-					        </div>
-					    </a>
-				    </div>-->
-				</div>
-				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				    <span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				    <span class="sr-only">Next</span>
-				</a>
-			</div><!-- /#team-slider -->
-		</div>
-	</div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Ubaid Russell | Email: Urussell0802@gmail.com | Phone: (929) 405-7444</p>
+    </footer>
 
-	<div id="footer">
-		<div class="container">
-			<div class="row centered">
-					<div class="col-xs-3">
-							<a href="https://twitter.com/UbaidRussell" target = "_blank" title="Twitter"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADxUlEQVR4nO2ZaYgcVRDH32pivI3Biyh4BcEDxQyoIKRRs2Pv+/+rekZsIQiCKAuKCNHPuh4fFLyiIoIoiugHryAoUQKCQVAUD1BMhHgn4oWCB17xotpaWXt779mZBvsHzTBTr6vr9atXr6omhIaGhoaGhobZQXLvDtCa6UrT9OCwQACcZLoAHBN6zdjY2G5CblHyr+kuId/K83yP+T5HyYsLPcBPGuPpYTEQkVVK/mgPEeAKAUYnXkre5UbcOB/9JM8R8jcBfs9I6f0M/vuwy93YmyrEQ0o+p+Suub7NTozHK/mtr+yVoQ8MKbBJgD80xjVlIYDDzSAh38/zfN/ZKLR9ZePdNTeEfqGqK4X8RskPqoxV4CJftTtn0pXn+V4KvOKTeDbP891DP1HgwsINgHuq5EI+oeSfEmM6QwDZ6HreGB4e3icMAgUeM2NJjpRlJA9S8nMldwI4sPJ+8g7fEzu7aXpEGBR0YwX4LG+3V5TlCqgb+lBZ5lHO3O97ETk5DJoMOLdwIfKRKrkCD7rrnD/+m62gRTYLtSTboS4ocH/xdkUuKMvSNN1fyY8V+FpEDlXVUwX4wVfjslAnVHU/AT4yY2OMh5XlInJ2Ea6BzeaG05xDg0dEzrQTWcjn7ayZJCc3TEhlHreIFeqKALe5i10yxXmxzfZTZ2TkuFBn0jRdJuTblo910vTYspzkatvgCrxQtWq1Qv/ZzL8q8FLVKS3A9f3MpxaEkte6sVeVZUmSLFHgNSV/FpETQ51JkmSJkK+bsap6QlluEygmQr5qY0NdEZGjBfjSw+ybo63W0kljgKtdfk2oI3m7vUKA99zId/3zuqkqTj/dV4c6MdpqLbWI5CnJi0mS7Onfd3WA08rjsyw7SsnvhNxq4TnUhCEFHva6Yut4xmtZbVH5AduqjM3IS33it4Q6oOQNbpDlVKumaCjcXnkv8IylMCSTMEhEZF2RAVtTQuSMqjEKPOnl8VllWbfbPaQIDsCHlrf1xehJBsa4RslfzEiJ8bzp6nIFvhByR5ZlyyfpAbrulveFflPqfKyfabyIZG7sA5Vy4NFCV4wIfa0Oge1zfYv/BoSK1bOVEuBTczNzt7DYeCb7sm/uTXM5nfO1aw9Q4BMlv7JCqywXkWGvODeGxcQOMiWfcnd6xwybT0fRjFXg6Sq5APd6ObAuLBZK3urutMOacQvQc7e/jJsrWq/ri9ap9c5UV/Z2BhMOL+t8ADhlod398VRm2gvY3PPaxYy3dn+M8che6LP6fpZ/VSzrxfMaGhoaGhr+F/wNvtv+A3mbIksAAAAASUVORK5CYII="></a>
-						</div>
-				<!--	<i style="font-size:24px" class="fa">&#xf081;</i>-->
-				<div class="col-xs-3">
-					<a href="https://www.instagram.com/b_orussss/" target = "_blank" title="instagram"><i class="fa fa-instagram"></i></a>
-				</div>
-				<div class="col-xs-3">
-					<a href="https://github.com/UbaidRussell" target = "_blank" title="Github"><i class="fa fa-github"></i></a>
-				</div>
-				<div class="col-xs-3">
-					<a id="news-button" title="Updates"><i class="fa fa-newspaper-o"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="overlay"></div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/typed.js"></script>
-	<script src="js/particles.js"></script>
-	<script src="js/app.js"></script>
-	<script>
-		var host = "ubaidrussell.com/"
-		if (window.location.host == host && window.location.protocol != "https:") {
-		  window.location.protocol = "https:"
-		}
-	</script>
-	<script>
-	    $(function(){
-	    	var count = 0;
-	    	var popup = document.getElementById("popup");
-	        $("#typed").typed({
-	            stringsElement: $('#typed-strings'),
-	            loop: true,
-	        	loopCount: false,
-	        	typeSpeed: 25,
-	        	backDelay: 750,
-	        	preStringTyped: function(){
-	        		count++;
-	        		if(count == 3){
-	        			popup.className='show';
-	        		}
-	        		else{
-	        			popup.className='';
-	        		}
-	        		if(count == 6){
-	        			count = 0;
-	        		}
-	        	}
-	        });
-	    });
-	</script>
-	<script type="text/javascript">
-	    // Initialize Variables
-	    var closePopup = document.getElementById("news-popupclose");
-	    var overlay = document.getElementById("overlay");
-	    var popup = document.getElementById("news-popup");
-	    var button = document.getElementById("news-button");
-	    // Close Popup Event
-	    overlay.onclick = function() {
-	        overlay.className = '';
-	        popup.className = '';
-	    };
-	    // Close Popup Event
-	    closePopup.onclick = function() {
-	        overlay.className = '';
-	        popup.className = '';
-	    };
-	    // Show Overlay and Popup
-	    button.onclick = function() {
-	        overlay.className = 'show';
-	        popup.className = 'show';
-	    }
-	</script>
-		<!-- jQuery Plugin -->
-
-
-	<!-- Preloader -->
-	<script type="text/javascript">
-	  $(window).load(function() {
-      $("#headerwrap").css("visibility","visible");
-	    $(".loader").fadeOut("slow");
-	  })
-	</script>
-  </body>
+    <script src="main.js"></script>
+</body>
 </html>
