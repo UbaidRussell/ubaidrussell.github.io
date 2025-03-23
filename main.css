@@ -15,12 +15,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 60px;
-    background: #000000;
+    padding: 20px 60px;
+    background: #481E14;
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;
 }
 
 nav {
@@ -184,7 +184,7 @@ nav a:hover {
 /* Footer */
 footer {
     padding: 30px;
-    background: #000000;
+    background: #481E14;
     text-align: center;
     color: #FFFFFF;
     font-size: 1.1em;
