@@ -15,12 +15,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    background: #481E14;
+    padding: 10px 60px;
+    background: #FF6F00;
 }
 
 .logo img {
-    height: 60px;
+    height: 80px;
 }
 
 nav {
@@ -29,7 +29,7 @@ nav {
 }
 
 nav a {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
     margin-left: 40px;
     font-size: 1.2em;
@@ -51,7 +51,7 @@ nav a:hover {
 .menu-toggle span {
     width: 30px;
     height: 3px;
-    background: #FF6F00;
+    background: #000000;
     margin: 3px 0;
     transition: all 0.3s;
 }
@@ -183,7 +183,7 @@ nav a:hover {
 /* Footer */
 footer {
     padding: 30px;
-    background: #481E14;
+    background: #FF6F00;
     text-align: center;
     color: #FFFFFF;
     font-size: 1.1em;
@@ -203,20 +203,23 @@ footer {
     }
 
     .logo img {
-        height: 40px;
+        height: 60px;
     }
 
-    .menu-toggle {
-        display: flex;
-    }
 
     nav {
+        color: #000000;
         display: none;
         width: 100%;
         flex-direction: column;
         text-align: center;
-        padding: 20px 0;
-        background: #000000;
+        padding: 10px 0;
+        background: #FF6F00;
+    }
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
     }
 
     nav.active {
