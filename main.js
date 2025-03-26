@@ -7,7 +7,7 @@ function toggleMenu() {
 // Function to fetch GitHub repositories and update the project section
 async function fetchGitHubProjects() {
     const username = 'UbaidRussell'; // Replace with your GitHub username
-    const url = `https://api.github.com/users/${username}/repos`;
+    const url = `https://api.github.com/users/${username}/repos?per_page=100`; // Fetch up to 100 repos per page
 
     try {
         const response = await fetch(url);
@@ -16,11 +16,14 @@ async function fetchGitHubProjects() {
         }
         const repos = await response.json();
 
-        // Filter repositories (optional: exclude forks, specific repos, etc.)
-        const projects = repos.filter(repo => !repo.fork && repo.description); // Example: exclude forks and repos without descriptions
+        // Filter repositories (exclude forks)
+        const projects = repos.filter(repo => !repo.fork);
 
-        // Sort by most recently updated (optional)
-        projects.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+        // Sort by creation date (most recent first, descending order)
+        projects.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+        // Log the sorted projects for debugging
+        console.log(projects.map(repo => ({ name: repo.name, created_at: repo.created_at })));
 
         // Get the project grid element
         const projectGrid = document.getElementById('project-grid');
@@ -39,10 +42,12 @@ async function fetchGitHubProjects() {
             const description = document.createElement('p');
             description.textContent = repo.description || 'No description available.';
 
-            // Optional: Add a link to the repository
+            // Add a link to the repository that opens in a new tab
             const link = document.createElement('a');
             link.href = repo.html_url;
             link.textContent = 'View on GitHub';
+            link.target = '_blank'; // Open in a new tab
+            link.rel = 'noopener noreferrer'; // Security best practice
             link.style.color = '#FF6F00';
             link.style.display = 'block';
             link.style.marginTop = '10px';
