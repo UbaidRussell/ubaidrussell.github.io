@@ -180,6 +180,30 @@ nav a:hover {
     font-size: 1.1em;
 }
 
+/* View Toggle Button */
+.view-toggle {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#view-toggle-btn {
+    padding: 12px 30px;
+    background: transparent;
+    color: #ff6500;
+    border: 1px solid #ff6500;
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#view-toggle-btn:hover {
+    background: #ff6500;
+    color: #000000;
+    box-shadow: 0 0 10px #ff6500;
+}
+
 /* Footer */
 footer {
     padding: 30px;
@@ -205,7 +229,6 @@ footer {
     .logo img {
         height: 60px;
     }
-
 
     nav {
         color: #000000;
@@ -291,6 +314,15 @@ footer {
         font-size: 1em;
     }
 
+    .view-toggle {
+        margin-bottom: 30px;
+    }
+
+    #view-toggle-btn {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+
     footer {
         padding: 20px;
         font-size: 1em;
@@ -363,6 +395,15 @@ footer {
     }
 
     .project-card p {
+        font-size: 0.9em;
+    }
+
+    .view-toggle {
+        margin-bottom: 20px;
+    }
+
+    #view-toggle-btn {
+        padding: 8px 20px;
         font-size: 0.9em;
     }
 
