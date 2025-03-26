@@ -224,6 +224,42 @@ nav a:hover {
     box-shadow: 0 0 10px #FF6F00;
 }
 
+/* Socials Section */
+.socials {
+    padding: 60px 40px;
+    background: rgba(26, 26, 26, 0.8); /* Semi-transparent to show particles */
+    text-align: center;
+    animation: fadeIn 1s ease-in 0.5s backwards;
+    position: relative;
+    z-index: 1;
+}
+
+.socials h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2em;
+    color: #FF6F00;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-links a {
+    color: #FF6F00;
+    font-size: 2.5em;
+    opacity: 0.7; /* Partly transparent */
+    transition: opacity 0.3s, transform 0.3s, text-shadow 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 1; /* Fully opaque on hover */
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #FF6F00;
+}
+
 /* Footer */
 footer {
     padding: 30px;
@@ -345,6 +381,23 @@ footer {
         font-size: 1em;
     }
 
+    .socials {
+        padding: 40px 20px;
+    }
+
+    .socials h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        gap: 30px;
+    }
+
+    .social-links a {
+        font-size: 2em;
+    }
+
     footer {
         padding: 20px;
         font-size: 1em;
@@ -427,6 +480,23 @@ footer {
     #view-toggle-btn {
         padding: 8px 20px;
         font-size: 0.9em;
+    }
+
+    .socials {
+        padding: 30px 15px;
+    }
+
+    .socials h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .social-links {
+        gap: 20px;
+    }
+
+    .social-links a {
+        font-size: 1.8em;
     }
 
     footer {
