@@ -103,5 +103,7 @@ async function fetchGitHubProjects() {
     }
 }
 
+
+
 // Run the function when the page loads
 document.addEventListener('DOMContentLoaded', fetchGitHubProjects);

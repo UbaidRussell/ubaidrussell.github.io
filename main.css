@@ -8,6 +8,18 @@ body {
     background: #1A1A1A;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
+    position: relative; /* Ensure body is a positioning context */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Particle Background */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind all content */
 }
 
 /* Header */
@@ -16,7 +28,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 60px;
-    background: #ff6500;
+    background: rgba(255, 111, 0, 0.9); /* Semi-transparent to show particles */
+    position: relative;
+    z-index: 1; /* Ensure header is above particles */
 }
 
 .logo img {
@@ -37,8 +51,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff6500;
-    text-shadow: 0 0 5px #ff6500;
+    color: #FF6F00;
+    text-shadow: 0 0 5px #FF6F00;
 }
 
 /* Menu Toggle for Mobile */
@@ -60,16 +74,18 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: #1A1A1A;
+    background: rgba(26, 26, 26, 0.8); /* Semi-transparent to show particles */
     animation: fadeIn 1s ease-in;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: 3.5em;
-    color: #ff6500;
+    color: #FF6F00;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px #ff6500;
+    text-shadow: 0 0 10px #FF6F00;
 }
 
 .hero p {
@@ -80,8 +96,8 @@ nav a:hover {
 .hero button {
     padding: 12px 30px;
     background: transparent;
-    color: #ff6500;
-    border: 1px solid #ff6500;
+    color: #FF6F00;
+    border: 1px solid #FF6F00;
     border-radius: 5px;
     font-family: 'Orbitron', sans-serif;
     font-size: 1.1em;
@@ -90,23 +106,25 @@ nav a:hover {
 }
 
 .hero button:hover {
-    background: #ff6500;
+    background: #FF6F00;
     color: #000000;
-    box-shadow: 0 0 10px #ff6500;
+    box-shadow: 0 0 10px #FF6F00;
 }
 
 /* Skills Section */
 .skills {
     padding: 80px 40px;
-    background: #1A1A1A;
+    background: rgba(26, 26, 26, 0.8); /* Semi-transparent to show particles */
     text-align: center;
     animation: fadeIn 1s ease-in 0.2s backwards;
+    position: relative;
+    z-index: 1;
 }
 
 .skills h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 2.2em;
-    color: #ff6500;
+    color: #FF6F00;
     margin-bottom: 40px;
 }
 
@@ -130,21 +148,23 @@ nav a:hover {
 
 .skills li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 10px #ff6500;
+    box-shadow: 0 0 10px #FF6F00;
 }
 
 /* Projects Section */
 .projects {
     padding: 80px 40px;
-    background: #1A1A1A;
+    background: rgba(26, 26, 26, 0.8); /* Semi-transparent to show particles */
     text-align: center;
     animation: fadeIn 1s ease-in 0.4s backwards;
+    position: relative;
+    z-index: 1;
 }
 
 .projects h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 2.2em;
-    color: #ff6500;
+    color: #FF6F00;
     margin-bottom: 40px;
 }
 
@@ -160,19 +180,19 @@ nav a:hover {
     background: #2A2A2A;
     padding: 25px;
     border-radius: 5px;
-    border: 1px solid #ff6500;
+    border: 1px solid #FF6F00;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #ff6500;
+    box-shadow: 0 0 15px #FF6F00;
 }
 
 .project-card h3 {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.4em;
-    color: #ff6500;
+    color: #FF6F00;
     margin-bottom: 15px;
 }
 
@@ -189,8 +209,8 @@ nav a:hover {
 #view-toggle-btn {
     padding: 12px 30px;
     background: transparent;
-    color: #ff6500;
-    border: 1px solid #ff6500;
+    color: #FF6F00;
+    border: 1px solid #FF6F00;
     border-radius: 5px;
     font-family: 'Orbitron', sans-serif;
     font-size: 1.1em;
@@ -199,18 +219,20 @@ nav a:hover {
 }
 
 #view-toggle-btn:hover {
-    background: #ff6500;
+    background: #FF6F00;
     color: #000000;
-    box-shadow: 0 0 10px #ff6500;
+    box-shadow: 0 0 10px #FF6F00;
 }
 
 /* Footer */
 footer {
     padding: 30px;
-    background: #ff6500;
+    background: rgba(255, 111, 0, 0.9); /* Semi-transparent to show particles */
     text-align: center;
     color: #FFFFFF;
     font-size: 1.1em;
+    position: relative;
+    z-index: 1;
 }
 
 /* Animations */
@@ -237,7 +259,7 @@ footer {
         flex-direction: column;
         text-align: center;
         padding: 10px 0;
-        background: #ff6500;
+        background: #FF6F00;
     }
     .menu-toggle {
         display: flex;
